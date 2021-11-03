@@ -35,3 +35,29 @@
 .nav_avatar:hover {
   transform: scale(1.09);
 }
+
+.nav_selects {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  margin-left: 110px;
+}
+
+h5 {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: 400;
+}
+
+h5:hover {
+  transition: 0.4s;
+  color: grey;
+}
+
+@media screen and (max-width: 545px) {
+  .nav_selects h5 {
+    visibility: hidden;
+  }
+}
