@@ -41,3 +41,24 @@ h2 {
 .row_posterLarge:hover {
   transform: scale(1.09);
 }
+
+.chevron_right {
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+  bottom: 135px;
+  right: 10px;
+}
+
+.chevron_right a {
+  color: white;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chevron_right a:hover {
+  transition: 0.2s;
+  transform: scale(1.39);
+}

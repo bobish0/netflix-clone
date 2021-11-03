@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from './axios';
 import "./Row.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const base_url = "https://image.tmdb.org/t/p/original/"; // where i get my images from
+// Importing font-awesome icons
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
+// Setting up imported fa:s in variables.
+const RightArrow = <FontAwesomeIcon size="2x" icon={faChevronRight} />
+const LeftArrow = <FontAwesomeIcon size="2x" icon={faChevronLeft} />
+ 
+// where we get the images from.
+const base_url = "https://image.tmdb.org/t/p/original/"; 
 
 function Row({ title, fetchUrl, isLargeRow }){
     const [movies, setMovies] = useState([]);   /* states are the varibles of components.*/
@@ -38,6 +48,11 @@ function Row({ title, fetchUrl, isLargeRow }){
                 />
             ))}
             </div>
+                
+            <div className='chevron_right'>
+            <a>{RightArrow}</a>
+            </div>    
+            
         </div>
     )
 

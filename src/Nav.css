@@ -49,6 +49,7 @@ h5 {
   padding: 5px;
   margin-right: 5px;
   font-weight: 400;
+  text-shadow: 1px 1px 1px #111;
 }
 
 h5:hover {
